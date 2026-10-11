@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-hand: 'Patrick Hand', cursive, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+/* Custom hand-drawn outline and organic borders matching wireframe */
+.wireframe-border {
+  border: 2px solid #1E293B;
+  box-shadow: 3px 3px 0px #1E293B;
+  border-radius: 12px;
+}
+
+.wireframe-border-sm {
+  border: 1.5px solid #1E293B;
+  box-shadow: 2px 2px 0px #1E293B;
+  border-radius: 8px;
+}
+
+.wireframe-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wireframe-card-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #1E293B;
+}
+
+.wireframe-btn-active:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1E293B;
+}
